@@ -11,11 +11,11 @@
     <p id="description">Let me know how I can improve this survey form</p>
     <form action="action_page.php" id="survey-form">
         <label id="name-label">* Name: </label>
-        <input type="text" id="name" placeholder="Enter Your First and Last Name"><br>
+        <input type="text" id="name" placeholder="Enter Your First and Last Name" required><br>
         <label id="email-label">* Email: </label>
-        <input type="email" id="email" placeholder="Enter Your Email Address"><br>
+        <input type="email" id="email" placeholder="Enter Your Email Address" required><br>
         <label id="number-label">* Phone Number: </label>
-        <input type="number" min="0000000000" max="999999999" id="number" placeholder="Enter Your Phone Number"><br>
+        <input type="number" min="0000000000" max="999999999" id="number" placeholder="Enter Your Phone Number" required><br>
         <label>Which option best describes your current role?</label>
         <select id="dropdown">
             <option value="student">Student</option>
@@ -24,10 +24,23 @@
             <option value="internship">Internship</option>
             <option value="other">Other</option>
         </select><br>
-        Would you recommend this survey to others? <br>
-        <input type="radio" name="question-1" value="definitely"> Definitely<br>
-        <input type="radio" name="question-1" value="maybe"> Maybe<br>
-        <input type="radio" name="question-1" value="not-sure"> Not Sure<br>
+        <label>Would you recommend this survey to others?</label><br>
+        <input type="radio" name="question-1" value="definitely"> 
+        <label>Definitely</label><br>
+        <input type="radio" name="question-1" value="maybe">
+        <label>Maybe</label><br>
+        <input type="radio" name="question-1" value="not-sure">
+        <label>Not Sure</label><br>
+        <label>Things that should be improved in the future<br>(Chcek all that apply):</label><br>
+        <input type="checkbox" value="color">
+        <label>Color</label><br>
+        <input type="checkbox" value="font">
+        <label>Font</label><br>
+        <input type="checkbox" value="structure">
+        <label>Structure</label><br>
+        <label>Any comments or suggestions?</label><br>
+        <textarea cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+        <input type="submit" value="Submit" id="submit">
     </form>
 </body>
 </html>
