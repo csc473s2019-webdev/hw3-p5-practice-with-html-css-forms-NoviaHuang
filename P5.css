@@ -4,7 +4,7 @@
     text-align: center;
     padding: 80px;
     height: 100px;
-    background-color: honeydew;
+    background-color: lavender;
 }
 
 #description, form{
@@ -23,4 +23,22 @@ label, textarea, input, select{
     left: 550px;
     top: -50px;
     line-height: 35px;
+}
+
+#submit{
+    top: -20px;
+    left: 750px;
+    background-color: lavender;
+    box-shadow: 0 2px 4px rgb(209, 209, 241);
+    border: none;
+    width: 130px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+input[text=text]:focus{
+    height: 20px;
+    width: 400px;
+    background-color: lavender;
+    border-radius: 5px;
 }
