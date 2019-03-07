@@ -36,9 +36,26 @@ label, textarea, input, select{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
-input[text=text]:focus{
+#name:enabled{
     height: 20px;
-    width: 400px;
-    background-color: lavender;
+    width: 450px;
+    position: relative;
+    left: 560px;
+    border-radius: 5px;
+}
+
+#email:enabled{
+    height: 20px;
+    width: 450px;
+    position: relative;
+    left: 563px;
+    border-radius: 5px;
+}
+
+#number:enabled{
+    height: 20px;
+    width: 380px;
+    position: relative;
+    left: 560px;
     border-radius: 5px;
 }
